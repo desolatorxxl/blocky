@@ -68,7 +68,7 @@ func ConfigureLogger(logLevel Level, formatType FormatType, logTimestamp bool) {
 		logFormatter := &prefixed.TextFormatter{
 			TimestampFormat:  "2006-01-02 15:04:05",
 			FullTimestamp:    true,
-			ForceFormatting:  true,
+			ForceFormatting:  false,
 			ForceColors:      true,
 			QuoteEmptyFields: true,
 			DisableTimestamp: !logTimestamp}
